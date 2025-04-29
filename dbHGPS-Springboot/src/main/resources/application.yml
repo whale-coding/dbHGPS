@@ -1,0 +1,16 @@
+server:
+  port: 8022
+  servlet:
+    context-path: /hgps
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://xxxx:3306/db_hgps?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    username: root
+    password: xxxxx
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.ahu.domain.pojo
